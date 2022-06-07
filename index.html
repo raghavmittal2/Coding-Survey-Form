@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css"/>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Coding Survey Form</h1>
+      <p id="description">A form for all the coders out there!</p>
+    </header>
+
+    <form id="survey-form" action="">
+      <fieldset>
+        <label id="name-label" for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Enter your name"required>
+
+        <label id="email-label" for="email">Email </label>
+        <input id="email" name="email" type="email" placeholder="Enter your email address" required>
+
+        <label id="number-label" for="number">Enter your age (in years)</label>
+        <input id="number" name="age" type="number" min=5 max=120 placeholder="Please tell us your age">
+
+        <label>Please select your occupation: 
+        <select id="dropdown" name="occupation">
+          <option value="">(Select one)</option>
+          <option value="1">Student</option>
+          <option value="2">Working professional</option>
+          <option value="3">Entrepreneur</option>
+          <option value= "4">Other</option>
+        </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label>
+          Would you recommend our plaform to others?
+          <label><input type="radio" name="recommend" checked> Definately</label>
+          <label><input type="radio" name="recommend"> Maybe</label>
+          <label><input type="radio" name="recommend"> Never</label>
+        </label>
+        <br>
+        <label>
+            What would you like us to improve?
+            <label><input type="checkbox" name="improve" value="exercises">Coding Exercises</label>
+            <label><input type="checkbox" name="improve" value="interview">Interview Preparation</label>
+            <label><input type="checkbox" name="imrpove" value="dev">Development Envinorment</label>
+            <label><input type="checkbox" name="improve" value="help">Help and Support</label>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label>Any comments or suggestions?
+            <textarea id="suggestions" rows=3 cols=25 placeholder="Your comments..."></textarea>
+        </label>
+      <input id="submit" type="submit" value="Submit">
+      </fieldset>
+
+    </form>
+
+    <footer>
+      <p class="end">No copyright 2022</p>
+    </footer>
+  </body>
+</html>
